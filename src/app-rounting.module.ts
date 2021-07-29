@@ -22,6 +22,10 @@ const routes:Routes = [
   {
     path:'pais/:id',
     component:VerPaisComponent
+  },
+  {
+    path:'**',
+    redirectTo:''
   }
 ]
 @NgModule({
