@@ -20,5 +20,9 @@ export class PaisService {
     return this.http.get<Country[]>(`${this.apiUrl}/capital/${termino}`)
   }
 
+  verPais(id:string):Observable<Country>{
+    return this.http.get<Country>(`${this.apiUrl}/alpha/${id}`)
+  }
+
 
 }
